@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'data/classes.dart';
 
-
-
 class CategoryWidget extends StatelessWidget {
   final ShoppingCategory caterogy;
   final bool active;
@@ -20,7 +18,7 @@ class CategoryWidget extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 5),
       padding: const EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
-        color: active ? Color(0xFFf1d9da) : null,
+        color: active ? heatBackground : null,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text(

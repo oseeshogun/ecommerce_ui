@@ -142,7 +142,7 @@ class _ViewState extends State<View> with TickerProviderStateMixin {
                           width: 18,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
-                            color: Color(0xFFf1d9da),
+                            color: heatBackground,
                             shape: BoxShape.circle,
                           ),
                           child: Text(
@@ -329,8 +329,7 @@ class _ViewState extends State<View> with TickerProviderStateMixin {
                       style: ButtonStyle(
                         padding: MaterialStateProperty.all(
                             EdgeInsets.symmetric(vertical: 15)),
-                        backgroundColor:
-                            MaterialStateProperty.all(Color(0xFF393939)),
+                        backgroundColor: MaterialStateProperty.all(darkBg),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15))),
                       ),

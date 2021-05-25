@@ -1,4 +1,5 @@
 import 'package:ecommerce/clothes.dart';
+import 'package:ecommerce/data/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
                             width: 18,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: Color(0xFFf1d9da),
+                              color: heatBackground,
                               shape: BoxShape.circle,
                             ),
                             child: Text(
@@ -142,7 +143,7 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Color(0xFF393939),
+        backgroundColor: darkBg,
         child: Icon(Icons.search),
       ),
     );
