@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'data/classes.dart';
+import 'data/colors.dart';
 
 class View extends StatefulWidget {
   final Cloth cloth;
