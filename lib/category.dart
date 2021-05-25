@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ShoppingCategory {
-  final String name;
+import 'data/classes.dart';
 
-  ShoppingCategory(this.name);
-}
 
-final List<ShoppingCategory> caterogies = [
-  ShoppingCategory("Manteau"),
-  ShoppingCategory("Robes"),
-  ShoppingCategory("Tricot"),
-  ShoppingCategory("Pantalons"),
-];
 
 class CategoryWidget extends StatelessWidget {
   final ShoppingCategory caterogy;

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 import 'category.dart';
+import 'data/classes.dart';
+import 'data/data.dart';
 
 class Home extends StatefulWidget {
   @override

@@ -1,75 +1,7 @@
 import 'package:ecommerce/view.dart';
 import 'package:flutter/material.dart';
 
-class Cloth {
-  final String title;
-  final int prize;
-  final String asset;
-  final bool reduction;
-  final String? next;
-
-  Cloth({
-    required this.title,
-    required this.prize,
-    required this.asset,
-    this.next,
-    this.reduction = false,
-  });
-}
-
-final List<Cloth> samples = [
-  Cloth(
-    title: "Manteau d'été",
-    prize: 80,
-    asset: 'images/manteau/laura-chouette-uTYFFN8g3EI-unsplash.jpg',
-    next: 'images/manteau/laura-chouette-NbGtAvj_E3Q-unsplash.jpg',
-  ),
-  Cloth(
-    title: "Pantalon kaki",
-    prize: 80,
-    asset: 'images/pants/engin-akyurt-5raPrOhbKQo-unsplash.jpg',
-    reduction: true,
-  ),
-  Cloth(
-    title: "Manteau belge",
-    prize: 80,
-    asset: 'images/manteau/laura-chouette-Pv3DjB4Q7nk-unsplash.jpg',
-    next: 'images/manteau/laura-chouette-CjB-8NY5at8-unsplash.jpg',
-  ),
-  Cloth(
-    title: "Culotte courte",
-    prize: 80,
-    asset: 'images/pants/engin-akyurt-nmJUumd6TBE-unsplash.jpg',
-  ),
-  Cloth(
-    title: "Complet Blanc",
-    prize: 80,
-    asset: 'images/autres/engin-akyurt-ehdI_89nzMo-unsplash.jpg',
-  ),
-];
-
-final List<Cloth> recommandations = [
-  Cloth(
-    title: "Pantalon kaki",
-    prize: 80,
-    asset: 'images/manteau/laura-chouette-Pv3DjB4Q7nk-unsplash.jpg',
-  ),
-  Cloth(
-    title: "Manteau d'été",
-    prize: 80,
-    asset: 'images/manteau/laura-chouette-d7wSG9uPev4-unsplash.jpg',
-  ),
-  Cloth(
-    title: "Culotte courte",
-    prize: 80,
-    asset: 'images/pants/ruben-ramirez-MVf14y-AhrM-unsplash.jpg',
-  ),
-  Cloth(
-    title: "Complet Blanc",
-    prize: 80,
-    asset: 'images/pants/michele-seghieri-kqvEzITj2Pk-unsplash.jpg',
-  ),
-];
+import 'data/classes.dart';
 
 class ClothWidget extends StatelessWidget {
   final Cloth cloth;
@@ -101,7 +33,7 @@ class ClothWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  if (cloth.reduction)
+                  if (cloth.reduction != null)
                     Align(
                       alignment: Alignment.topLeft,
                       child: Container(
@@ -115,7 +47,7 @@ class ClothWidget extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(
-                          '-30%',
+                          '-${cloth.reduction}%',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
