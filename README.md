@@ -18,12 +18,9 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-<img src="./screenshots/Screenshot_1621981552.png" />
+<img src="./screenshots/Screenshot_1621981552.png" width="200" />
 
-# 
 
-<img src="./screenshots/Screenshot_1621981557.png" />
+<img src="./screenshots/Screenshot_1621981557.png" width="200" />
 
-#
-
-<img src="./screenshots/Screenshot_1621981562.png" />
+<img src="./screenshots/Screenshot_1621981562.png" width="200" />
